@@ -146,6 +146,10 @@ a {
     gap: 0.5rem;
 }
 
+.navbar-social {
+    display: none;
+}
+
 .navbar a {
     font-family: var(--font-mono);
     font-size: 1.3rem;
@@ -790,6 +794,27 @@ section {
         text-align: center;
     }
 
+    /* Social icons in mobile drawer */
+    .navbar-social {
+        display: flex;
+        gap: 2.4rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--lightest-navy);
+        width: 100%;
+    }
+
+    .navbar-social a {
+        color: var(--light-slate);
+        font-size: 2.4rem;
+        padding: 0;
+        width: auto;
+    }
+
+    .navbar-social a:hover {
+        color: var(--green);
+    }
+
     /* About */
     .about-content {
         flex-direction: column;
@@ -804,15 +829,34 @@ section {
         flex-direction: column;
     }
 
+    .tab-list-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .tab-list-wrapper::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 4rem;
+        background: linear-gradient(to right, transparent, var(--navy));
+        pointer-events: none;
+    }
+
     .tab-list {
         flex-direction: row;
         overflow-x: auto;
+        overflow-y: hidden;
         border-left: none;
         border-bottom: 2px solid var(--lightest-navy);
         min-width: 0;
         width: 100%;
         padding-bottom: 0;
         scrollbar-width: none;
+        touch-action: pan-x;
+        overscroll-behavior-x: contain;
     }
 
     .tab-list::-webkit-scrollbar {
@@ -824,8 +868,19 @@ section {
         border-bottom: 2px solid transparent;
         margin-left: 0;
         margin-bottom: -2px;
-        padding: 1rem 1.8rem;
+        padding: 0.6rem 0.9rem;
         flex-shrink: 0;
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .tab-period {
+        display: none;
+    }
+
+    .tab-group-header {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem 0.3rem;
     }
 
     .tab-btn.active {
