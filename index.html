@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,212 +7,197 @@
     <title>Jeziel Paladino</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo"> Jeziel
-            <span>Paladino</span>
-        </a>
+
+    <!-- Left social sidebar -->
+    <div class="social-bar" aria-label="Social links">
+        <div class="social-bar-icons">
+            <a href="https://www.linkedin.com/in/jeziel-paladino/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="mailto:jezielpaladino@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+    </div>
+
+    <!-- Fixed navbar -->
+    <header class="header" id="header">
+        <a href="#home" class="logo">Jeziel <span>Paladino</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#about-me">Sobre mi</a>
-            <a href="#education">Experiencia</a>
-            <a href="#publications">Publicaciones</a>
-<!--        <a href="#blog">Blog</a>
-            <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer">Proyectos</a> -->
+            <a href="#home"><span class="nav-num">01.</span> Inicio</a>
+            <a href="#about-me"><span class="nav-num">02.</span> Sobre mí</a>
+            <a href="#experience"><span class="nav-num">03.</span> Experiencia</a>
+            <a href="#publications"><span class="nav-num">04.</span> Publicaciones</a>
+            <a href="cv_paladino_jeziel.pdf" download class="nav-resume-btn">CV</a>
         </nav>
     </header>
+
+    <!-- Hero section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>¡Hola, soy <span>Jeze!</span></h1>
-            <h3><span>Desarrollador y profesor</span></h3>
-            <p>Apasionado por el desarrollo de software de alto impacto, los pilares que me guían son aprender, desarrollar y enseñar. Me especializo en ingeniería de software, mantengo una visión completa de cada proyecto, desde optimización y eficiencia en el código hasta planificación estratégica y análisis de riesgos.</p>
-            <div class="social-icons-btn-group">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/jeziel-paladino/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-                </div>
-                <div class="btn-group">
-                    <a href="cv_paladino_jeziel.pdf" download="cv_paladino_jeziel" class="btn">Descargá mi CV</a>
-                    <a href="mailto:jezielpaladino@gmail.com" class="btn">Contactame</a>
+            <p class="home-greeting">Hola, mi nombre es</p>
+            <h1 class="home-name">Jeziel Paladino.</h1>
+            <h2 class="home-subtitle"><span id="typed-text"></span><span class="cursor">|</span></h2>
+            <p class="home-description">Apasionado por el desarrollo de software de alto impacto, los pilares que me guían son aprender, desarrollar y enseñar. Me especializo en ingeniería de software, mantengo una visión completa de cada proyecto, desde optimización y eficiencia en el código hasta planificación estratégica y análisis de riesgos.</p>
+            <div class="home-buttons">
+                <a href="cv_paladino_jeziel.pdf" download="cv_paladino_jeziel" class="btn">Descargá mi CV</a>
+                <a href="mailto:jezielpaladino@gmail.com" class="btn btn-outline">Contactame</a>
             </div>
-        </div>
         </div>
         <div class="home-img">
-            <img src="Jeze.png" alt="">
-        </div>    
-    </section>
-    <section class="about-container" id="about-me">
-            <h1 class="heading">Sobre Mi</h1>
-            <p class="about-description">
-                Disfruto profundamente de la tecnología y dedico gran parte de mi tiempo a explorar sus posibilidades. Actualmente trabajo para el cliente de MobyDigital, el banco ICBC Argentina; soy profesor ayudante de la materia Orientación a Objetos 1 en la Universidad Nacional de La Plata, y estudiante de Licenciatura en Sistemas en la misma institución.
-            </p>
-            <div>
-            <p class="about-description">Stack Actual:</p>
-            <ul class="about-technologies">
-                    <li><span>Frontend:</span> JavaScript, TypeScript, Angular.</li>
-                    <li><span>Backend:</span> Java, Spring.</li>
-                    <li><span>Bases de Datos:</span> Oracle, MySQL.</li>
-            </ul>
-            </div>
-            <p class="about-description">
-                Por fuera de la tecnología, me mantengo en forma, juego videojuegos (antes más frecuentemente), disfruto del cine, la historia, la geopolítica, y en general de la cultura.
-            </p>
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">Desarrollo y Tecnología</h2>
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <div>Desarrollador Backend | MobyDigital</div>
-                        <div>2022</div>
-                    </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Durante mi entrenamiento de 3 meses en Academy:</p>
-                        <p class="timeline-content-text">● Mejoré los tiempos de carga de la aplicación de RRHH reduciéndolos en un 50% cambiando los datos enviados en las diferentes peticiones.</p>
-                        <p class="timeline-content-text">● Mejoré la legibilidad del código, agregando programación funcional.</p>
-                        <p class="timeline-content-text">● Capacité a compañeros que no habían utilizado programación funcional.</p>
-                        <p class="timeline-content-text">● Implementamos un sistema de scraping, para alimentar la aplicación de RRHH con nuevos talentos diariamente.</p>
-                        <br>
-                        <p class="timeline-content-title">Actualmente me desempeño en ICBC Multipay, empresa cliente de MobyDigital.</p>
-                    </div>
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <div>Desarrollador Backend | ICBC - Multipay Core</div>
-                        <div>2022 - 2023</div>
-                    </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Principales contribuciones:</p>
-                        <p class="timeline-content-text">● Permitir pagos a proveedores dentro o fuera de ICBC superiores a $100MM.</p>
-                        <p class="timeline-content-text">● Proceso de modernizacion del Core de la aplicacion (Migracion de SP y SF, balanceo de cargas de servicios entre nuevos y viejos productos e implementación de protocolo HTTP).</p>
-                        <p class="timeline-content-title">Tareas que realizaba:</p>
-                        <p class="timeline-content-text">● Resolución de issues productivos.</p>
-                        <p class="timeline-content-text">● Implementación de nuevas funcionalidades al sistema.</p>
-                        <p class="timeline-content-text">● Migraciones de productos a nuevas tecnologías y procesos.</p>
-                        <p class="timeline-content-title">La célula luego fue dividida en varias células debido a la carga de trabajo que implicaba para un solo equipo.</p>
-                    </div>
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <div>Desarrollador Backend | ICBC - Pagos y B2B</div>
-                        <div>2023 - Presente</div>
-                    </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Principales contribuciones:</p>
-                        <p class="timeline-content-text">● Desarrollo de funcionalidades para la prevencion de fraudes.</p>
-                        <p class="timeline-content-text">● Contribuí en el proyecto de generación y validación de Token ICBC, del equipo de Cobros, Administración y Seguridad; desarrollando funcionalidades para integrarlo en el área de pagos. </p>
-                        <p class="timeline-content-text">● Migración del producto Débito Inmediato Pagos en aplicación monolítica a microservicios, y de tecnologías viejas cómo Java 1.4 con JSP y Struts, a Spring y Angular. </p>
-                        <p class="timeline-content-title">Tareas que realizo:</p>
-                        <p class="timeline-content-text">● Resolución de issues productivos.</p>
-                        <p class="timeline-content-text">● Implementación de nuevas funcionalidades al sistema.</p>
-                        <p class="timeline-content-text">● Migraciones de productos a nuevas tecnologías y procesos.</p>
-                    </div>
+            <img src="Jeze.png" alt="Foto de Jeziel Paladino">
         </div>
     </section>
-    <section class="education" id="education">
-        <h2 class="heading">Docencia e Investigación</h2>
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <div>Becario de TI | LIFIA - UNLP</div>
-                        <div>2022</div>
-                    </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Redacté mi primer short-paper investigando sobre el uso de los datos de las redes sociales de mayor alcance, y su aplicación a una plataforma educativa de visualizacion de datos en diversos formatos</p>
-                    </div>
-            </div>
 
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <div>Investigador | LIFIA - UNLP</div>
-                    <div>2022 - 2024</div>
+    <!-- About section -->
+    <section class="about-section fade-in-section" id="about-me">
+        <h2 class="section-title">
+            <span class="section-num">02.</span> Sobre Mí
+            <div class="section-line"></div>
+        </h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Disfruto profundamente de la tecnología y dedico gran parte de mi tiempo a explorar sus posibilidades. Actualmente trabajo para el cliente de MobyDigital, el banco ICBC Argentina; soy profesor ayudante de la materia Orientación a Objetos 1 en la Universidad Nacional de La Plata, y estudiante de Licenciatura en Sistemas en la misma institución.</p>
+                <p>Por fuera de la tecnología, me mantengo en forma, juego videojuegos (antes más frecuentemente), disfruto del cine, la historia, la geopolítica, y en general de la cultura.</p>
+                <p class="tech-intro">Stack actual:</p>
+                <ul class="tech-list">
+                    <li>JavaScript / TypeScript</li>
+                    <li>Angular</li>
+                    <li>Java / Spring</li>
+                    <li>Oracle / MySQL</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="Jeze.png" alt="Jeziel Paladino">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="experience-section fade-in-section" id="experience">
+        <h2 class="section-title">
+            <span class="section-num">03.</span> Experiencia
+            <div class="section-line"></div>
+        </h2>
+        <div class="experience-container">
+            <div class="tab-list" role="tablist" aria-label="Experiencia laboral y docente">
+                <button class="tab-btn active" data-tab="moby" role="tab" aria-selected="true">MobyDigital</button>
+                <button class="tab-btn" data-tab="icbc-multipay" role="tab" aria-selected="false">ICBC Multipay</button>
+                <button class="tab-btn" data-tab="icbc-pagos" role="tab" aria-selected="false">ICBC Pagos</button>
+                <button class="tab-btn" data-tab="lifia-bec" role="tab" aria-selected="false">LIFIA Becario</button>
+                <button class="tab-btn" data-tab="lifia-inv" role="tab" aria-selected="false">LIFIA Investigador</button>
+                <button class="tab-btn" data-tab="oo2" role="tab" aria-selected="false">UNLP OO2</button>
+                <button class="tab-btn" data-tab="mentor" role="tab" aria-selected="false">Mentor Moby</button>
+                <button class="tab-btn" data-tab="oo1" role="tab" aria-selected="false">UNLP OO1</button>
+            </div>
+            <div class="tab-content">
+
+                <div class="tab-panel active" id="tab-moby" role="tabpanel">
+                    <h3>Desarrollador Backend <span>@ MobyDigital</span></h3>
+                    <p class="tab-date">2022</p>
+                    <ul>
+                        <li>Mejoré los tiempos de carga de la aplicación de RRHH reduciéndolos en un 50% cambiando los datos enviados en las diferentes peticiones.</li>
+                        <li>Mejoré la legibilidad del código, agregando programación funcional.</li>
+                        <li>Capacité a compañeros que no habían utilizado programación funcional.</li>
+                        <li>Implementamos un sistema de scraping para alimentar la aplicación de RRHH con nuevos talentos diariamente.</li>
+                    </ul>
                 </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Investigué sobre prompt engineering y el acceso a apis de diversas IAs para poder implementarlas en una plataforma educativa. Luego, me involucre un tiempo con Metaversos y guantes hápticos, con Arduino y Unity.</p>
-                    </div>
-            </div>
 
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        <div>Ayudante Adscripto - Cátedra de Orientación a Objetos 2 | UNLP</div>
-                        <div>2023 - 2023</div>
-                    </div>
-                    <div class="timeline-content">
-                    <p class="timeline-content-title">
-                            El objetivo es profundizar los temas desarrollados en Orientación a Objetos 1 e introducir conceptos fundamentales en la construcción de arquitecturas de software modulares, extensibles y reusables, a través de conceptos fundamentales como: Patrones de diseño, refactoring y frameworks. También en el uso de UML, para construir diagramas especificando distintos aspectos de un sistema.</p>
-                    </div>
-            </div>
-
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">
-                    <div>Mentor de Desarrollo Backend | MobyDigital</div>
-                    <div>2023 - 2023</div>
+                <div class="tab-panel" id="tab-icbc-multipay" role="tabpanel">
+                    <h3>Desarrollador Backend <span>@ ICBC – Multipay Core</span></h3>
+                    <p class="tab-date">2022 – 2023</p>
+                    <ul>
+                        <li>Habilitación de pagos a proveedores dentro o fuera de ICBC superiores a $100MM.</li>
+                        <li>Proceso de modernización del Core de la aplicación: migración de SP y SF, balanceo de cargas entre nuevos y viejos productos, e implementación de protocolo HTTP.</li>
+                        <li>Resolución de issues productivos e implementación de nuevas funcionalidades al sistema.</li>
+                    </ul>
                 </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">Tareas que realizaba:</p>
-                        <p class="timeline-content-text">● Guiar, enseñar y transmitir conocimientos.</p>
-                        <p class="timeline-content-text">● Estar en el día a día de los desarrolladores y resolver dudas o bloqueos.</p>
-                        <p class="timeline-content-text">● Tomar decisiones de diseño, arquitectura e implementación.</p>
-                        <p class="timeline-content-text">● Crear contenido del roadmap, ejercicios técnicos y evaluaciones técnicas.</p>
-                        <p class="timeline-content-text">● Brindar onboarding técnico cuando ingresa un recurso.</p>
-                        <p class="timeline-content-text">● Entrega y revisión del roadmap.</p>
-                        <p class="timeline-content-text">● Crear un proyecto de práctica.</p>
-                        <p class="timeline-content-text">● Corrección y revisión de código.</p>
-                        <p class="timeline-content-text">● Participar de las mentorías 2 veces por semana.</p>
-                        <p class="timeline-content-text">● Evaluar al alumno tanto en mentalidad como a nivel técnico.</p>
-                        <p class="timeline-content-text">● Preparar ejercicios prácticos para los alumnos.</p>
-                        <p class="timeline-content-text">● Enviar evaluaciones.</p>
-                        <p class="timeline-content-text">● Corrección de evaluaciones.</p>
-                        <p class="timeline-content-text">● Compromiso de entregables, evaluaciones y devoluciones en tiempo y forma.</p>
-                        <p class="timeline-content-text">● Reportar el avance de los alumnos tanto técnica como actitudinalmente.</p>
-                        <p class="timeline-content-text">● Entrevistar perfiles para Moby Academy.</p>
-                        <p class="timeline-content-text">● Preparación de clases.</p>
-                    </div>
-            </div>
 
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date"></div>
-                    <div class="timeline-date">
-                        <div>Ayudante Alumno - Cátedra de Orientación a Objetos 1 | UNLP</div>
-                        <div>2023 - Presente</div>
-                    </div>
-                    <div class="timeline-content">
-                        <p class="timeline-content-title">
-                            El objetivo es presentar formalmente el paradigma de orientación a objetos, sus características, ventajas y aplicaciones dentro del desarrollo de sistemas de software. Desarrollar prácticas concretas con lenguajes orientados a Objetos. Establecer metodologías de análisis y diseño orientados a objetos.</p>
-                    </div>
+                <div class="tab-panel" id="tab-icbc-pagos" role="tabpanel">
+                    <h3>Desarrollador Backend <span>@ ICBC – Pagos y B2B</span></h3>
+                    <p class="tab-date">2023 – Presente</p>
+                    <ul>
+                        <li>Desarrollo de funcionalidades para la prevención de fraudes.</li>
+                        <li>Contribuí en el proyecto de generación y validación de Token ICBC, desarrollando funcionalidades para integrarlo en el área de pagos.</li>
+                        <li>Migración de Débito Inmediato Pagos de aplicación monolítica a microservicios, y de Java 1.4/JSP/Struts a Spring y Angular.</li>
+                        <li>Resolución de issues productivos e implementación de nuevas funcionalidades.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="tab-lifia-bec" role="tabpanel">
+                    <h3>Becario de TI <span>@ LIFIA – UNLP</span></h3>
+                    <p class="tab-date">2022</p>
+                    <ul>
+                        <li>Redacté mi primer short-paper investigando sobre el uso de datos de redes sociales de mayor alcance y su aplicación en una plataforma educativa de visualización de datos en diversos formatos.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="tab-lifia-inv" role="tabpanel">
+                    <h3>Investigador <span>@ LIFIA – UNLP</span></h3>
+                    <p class="tab-date">2022 – 2024</p>
+                    <ul>
+                        <li>Investigué sobre prompt engineering y el acceso a APIs de diversas IAs para implementarlas en una plataforma educativa.</li>
+                        <li>Exploré Metaversos y guantes hápticos utilizando Arduino y Unity.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="tab-oo2" role="tabpanel">
+                    <h3>Ayudante Adscripto – OO2 <span>@ UNLP</span></h3>
+                    <p class="tab-date">2023</p>
+                    <ul>
+                        <li>Profundización de los temas de OO1 e introducción a conceptos fundamentales para construir arquitecturas de software modulares, extensibles y reusables.</li>
+                        <li>Patrones de diseño, refactoring, frameworks y UML para la especificación de sistemas.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="tab-mentor" role="tabpanel">
+                    <h3>Mentor de Desarrollo Backend <span>@ MobyDigital</span></h3>
+                    <p class="tab-date">2023</p>
+                    <ul>
+                        <li>Guiar, enseñar y transmitir conocimientos a desarrolladores en formación.</li>
+                        <li>Tomar decisiones de diseño, arquitectura e implementación.</li>
+                        <li>Crear contenido del roadmap, ejercicios técnicos y evaluaciones.</li>
+                        <li>Corrección y revisión de código, entrevistas técnicas y preparación de clases.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-panel" id="tab-oo1" role="tabpanel">
+                    <h3>Ayudante Alumno – OO1 <span>@ UNLP</span></h3>
+                    <p class="tab-date">2023 – Presente</p>
+                    <ul>
+                        <li>Presentación formal del paradigma de orientación a objetos, sus características, ventajas y aplicaciones en el desarrollo de software.</li>
+                        <li>Prácticas concretas con lenguajes orientados a objetos y metodologías de análisis y diseño.</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
-    <section class="publications" id="publications">
-        <h2 class="heading">Publicaciones</h2>
-        <div class="timeline-content">
-        <p class="timeline-content-title">
-            Paladino, J. L., Lliteras, A. B., Gardey, J. C., & Grigera, J. (2023). AlfaDatizando: Visualización de
-            contenido generado por usuarios de redes sociales. In XXVIII Congreso Argentino de Ciencias de
-            la Computación (CACIC)(La Rioja, 3 al 6 de octubre de 2022)</p>
+
+    <!-- Publications section -->
+    <section class="publications-section fade-in-section" id="publications">
+        <h2 class="section-title">
+            <span class="section-num">04.</span> Publicaciones
+            <div class="section-line"></div>
+        </h2>
+        <div class="publication-card">
+            <p>Paladino, J. L., Lliteras, A. B., Gardey, J. C., &amp; Grigera, J. (2023). <strong>AlfaDatizando: Visualización de contenido generado por usuarios de redes sociales.</strong> In XXVIII Congreso Argentino de Ciencias de la Computación (CACIC) (La Rioja, 3 al 6 de octubre de 2022).</p>
         </div>
-        <div class="tristeza">
-            <p class="timeline-content-title">Algún día esta sección va a ocupar mucho espacio, algún día...</p>
-        </div>
-</section>
+        <p class="publications-note">Algún día esta sección va a ocupar mucho espacio, algún día...</p>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/jeziel-paladino/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/jeziel-paladino/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="mailto:jezielpaladino@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
         </div>
-        <ul class="list">
-            <!-- <li>
-                <a href="#">Blog</a>
-            </li> -->
-            <!-- <li>
-                <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer">Proyectos</a>
-            </li> -->
-            <li>
-                <a href="mailto:jezielpaladino@gmail.com">Contacto</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            @ Jeziel Paladino | All Rights Reserved
-        </p>
+        <p class="footer-text">Diseñado y construido por Jeziel Paladino</p>
+        <p class="footer-copyright">© 2024 All Rights Reserved</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
