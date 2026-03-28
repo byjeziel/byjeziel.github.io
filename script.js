@@ -18,7 +18,6 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// Close menu when a nav link is clicked
 document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => {
         menuIcon.classList.remove('bx-x');
@@ -80,47 +79,3 @@ tabBtns.forEach(btn => {
         document.getElementById('tab-' + tabId).classList.add('active');
     });
 });
-
-/* ============ TYPING ANIMATION ============ */
-const typedEl = document.getElementById('typed-text');
-
-const phrases = [
-    'Desarrollador Backend.',
-    'Docente universitario.',
-    'Apasionado del software.'
-];
-
-let phraseIndex = 0;
-let charIndex   = 0;
-let isDeleting  = false;
-let delay       = 90;
-
-function type() {
-    const current = phrases[phraseIndex];
-
-    if (!isDeleting) {
-        typedEl.textContent = current.substring(0, charIndex + 1);
-        charIndex++;
-
-        if (charIndex === current.length) {
-            isDeleting = true;
-            delay = 2200; // pause before deleting
-        } else {
-            delay = 90;
-        }
-    } else {
-        typedEl.textContent = current.substring(0, charIndex - 1);
-        charIndex--;
-        delay = 50;
-
-        if (charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            delay = 400;
-        }
-    }
-
-    setTimeout(type, delay);
-}
-
-type();
