@@ -22,51 +22,41 @@
 
     <!-- Fixed navbar -->
     <header class="header" id="header">
-        <a href="#home" class="logo">Jeziel <span>Paladino</span></a>
+        <a href="#about-me" class="logo">Jeziel <span>Paladino</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home"><span class="nav-num">01.</span> Inicio</a>
-            <a href="#about-me"><span class="nav-num">02.</span> Sobre mí</a>
-            <a href="#experience"><span class="nav-num">03.</span> Experiencia</a>
-            <a href="#publications"><span class="nav-num">04.</span> Publicaciones</a>
+            <a href="#about-me"><span class="nav-num">01.</span> Sobre mí</a>
+            <a href="#experience"><span class="nav-num">02.</span> Experiencia</a>
+            <a href="#publications"><span class="nav-num">03.</span> Publicaciones</a>
             <a href="cv_paladino_jeziel.pdf" download class="nav-resume-btn">CV</a>
         </nav>
     </header>
 
-    <!-- Hero section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <p class="home-greeting">Hola, mi nombre es</p>
-            <h1 class="home-name">Jeziel Paladino.</h1>
-            <h2 class="home-subtitle"><span id="typed-text"></span><span class="cursor">|</span></h2>
-            <p class="home-description">Apasionado por el desarrollo de software de alto impacto, los pilares que me guían son aprender, desarrollar y enseñar. Me especializo en ingeniería de software, mantengo una visión completa de cada proyecto, desde optimización y eficiencia en el código hasta planificación estratégica y análisis de riesgos.</p>
-            <div class="home-buttons">
-                <a href="cv_paladino_jeziel.pdf" download="cv_paladino_jeziel" class="btn">Descargá mi CV</a>
-                <a href="mailto:jezielpaladino@gmail.com" class="btn btn-outline">Contactame</a>
-            </div>
-        </div>
-        <div class="home-img">
-            <img src="Jeze.png" alt="Foto de Jeziel Paladino">
-        </div>
-    </section>
-
     <!-- About section -->
-    <section class="about-section fade-in-section" id="about-me">
+    <section class="about-section" id="about-me">
         <h2 class="section-title">
-            <span class="section-num">02.</span> Sobre Mí
+            <span class="section-num">01.</span> Sobre Mí
             <div class="section-line"></div>
         </h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Disfruto profundamente de la tecnología y dedico gran parte de mi tiempo a explorar sus posibilidades. Actualmente trabajo para el cliente de MobyDigital, el banco ICBC Argentina; soy profesor ayudante de la materia Orientación a Objetos 1 en la Universidad Nacional de La Plata, y estudiante de Licenciatura en Sistemas en la misma institución.</p>
-                <p>Por fuera de la tecnología, me mantengo en forma, juego videojuegos (antes más frecuentemente), disfruto del cine, la historia, la geopolítica, y en general de la cultura.</p>
-                <p class="tech-intro">Stack actual:</p>
+                <p>Disfruto profundamente de la tecnología y dedico gran parte de mi tiempo a explorar sus posibilidades. Actualmente soy <strong>Software Engineer</strong> en <a href="https://www.mercadolibre.com" target="_blank" rel="noopener noreferrer" class="highlight-link">Mercado Libre</a> y <strong>profesor ayudante</strong> de Orientación a Objetos 1 en la <a href="https://www.unlp.edu.ar" target="_blank" rel="noopener noreferrer" class="highlight-link">Universidad Nacional de La Plata</a>.</p>
+
+                <p class="tech-intro">Algunas tecnologías con las que estuve trabajando:</p>
                 <ul class="tech-list">
                     <li>JavaScript / TypeScript</li>
                     <li>Angular</li>
                     <li>Java / Spring</li>
+                    <li>Go</li>
+                    <li>Python</li>
                     <li>Oracle / MySQL</li>
                 </ul>
+
+                <p>Por fuera de la tecnología, intento mantenerme en forma, jugar videojuegos (antes más frecuentemente), disfrutar del cine y el arte en general, la historia, y la cultura.</p>
+                <div class="about-buttons">
+                    <a href="cv_paladino_jeziel.pdf" download="cv_paladino_jeziel" class="btn">Descargá mi CV</a>
+                    <a href="mailto:jezielpaladino@gmail.com" class="btn btn-outline">Contactame</a>
+                </div>
             </div>
             <div class="about-img">
                 <img src="Jeze.png" alt="Jeziel Paladino">
@@ -77,23 +67,26 @@
     <!-- Experience section -->
     <section class="experience-section fade-in-section" id="experience">
         <h2 class="section-title">
-            <span class="section-num">03.</span> Experiencia
+            <span class="section-num">02.</span> Experiencia
             <div class="section-line"></div>
         </h2>
         <div class="experience-container">
             <div class="tab-list" role="tablist" aria-label="Experiencia laboral y docente">
-                <button class="tab-btn active" data-tab="moby" role="tab" aria-selected="true">MobyDigital</button>
-                <button class="tab-btn" data-tab="icbc-multipay" role="tab" aria-selected="false">ICBC Multipay</button>
-                <button class="tab-btn" data-tab="icbc-pagos" role="tab" aria-selected="false">ICBC Pagos</button>
-                <button class="tab-btn" data-tab="lifia-bec" role="tab" aria-selected="false">LIFIA Becario</button>
-                <button class="tab-btn" data-tab="lifia-inv" role="tab" aria-selected="false">LIFIA Investigador</button>
-                <button class="tab-btn" data-tab="oo2" role="tab" aria-selected="false">UNLP OO2</button>
-                <button class="tab-btn" data-tab="mentor" role="tab" aria-selected="false">Mentor Moby</button>
-                <button class="tab-btn" data-tab="oo1" role="tab" aria-selected="false">UNLP OO1</button>
+                <div class="tab-group-header">Laboral</div>
+                <button class="tab-btn active" data-tab="meli" role="tab" aria-selected="true"><span>Mercado Libre</span><span class="tab-period">2026–hoy</span></button>
+                <button class="tab-btn" data-tab="icbc-pagos" role="tab" aria-selected="false"><span>ICBC Multipay</span><span class="tab-period">2023–26</span></button>
+                <button class="tab-btn" data-tab="mentor" role="tab" aria-selected="false"><span>MobyDigital</span><span class="tab-period">2023</span></button>
+                <button class="tab-btn" data-tab="icbc-multipay" role="tab" aria-selected="false"><span>ICBC Multipay</span><span class="tab-period">2022–23</span></button>
+                <button class="tab-btn" data-tab="moby" role="tab" aria-selected="false"><span>MobyDigital</span><span class="tab-period">2022</span></button>
+                <div class="tab-group-header tab-group-header--second">Académico</div>
+                <button class="tab-btn" data-tab="oo1" role="tab" aria-selected="false"><span>UNLP</span><span class="tab-period">2023–hoy</span></button>
+                <button class="tab-btn" data-tab="lifia-inv" role="tab" aria-selected="false"><span>LIFIA</span><span class="tab-period">2022–24</span></button>
+                <button class="tab-btn" data-tab="oo2" role="tab" aria-selected="false"><span>UNLP</span><span class="tab-period">2023</span></button>
+                <button class="tab-btn" data-tab="lifia-bec" role="tab" aria-selected="false"><span>LIFIA</span><span class="tab-period">2022</span></button>
             </div>
             <div class="tab-content">
 
-                <div class="tab-panel active" id="tab-moby" role="tabpanel">
+                <div class="tab-panel" id="tab-moby" role="tabpanel">
                     <h3>Desarrollador Backend <span>@ MobyDigital</span></h3>
                     <p class="tab-date">2022</p>
                     <ul>
@@ -105,7 +98,7 @@
                 </div>
 
                 <div class="tab-panel" id="tab-icbc-multipay" role="tabpanel">
-                    <h3>Desarrollador Backend <span>@ ICBC – Multipay Core</span></h3>
+                    <h3>Desarrollador Backend <span>@ ICBC Multipay – Core</span></h3>
                     <p class="tab-date">2022 – 2023</p>
                     <ul>
                         <li>Habilitación de pagos a proveedores dentro o fuera de ICBC superiores a $100MM.</li>
@@ -114,9 +107,17 @@
                     </ul>
                 </div>
 
+                <div class="tab-panel active" id="tab-meli" role="tabpanel">
+                    <h3>Software Engineer <span>@ Mercado Libre – Seller Central</span></h3>
+                    <p class="tab-date">2026 – Presente</p>
+                    <ul>
+                        <li>Resolución de bugs productivos e implementación de nuevas funcionalidades.</li>
+                    </ul>
+                </div>
+
                 <div class="tab-panel" id="tab-icbc-pagos" role="tabpanel">
-                    <h3>Desarrollador Backend <span>@ ICBC – Pagos y B2B</span></h3>
-                    <p class="tab-date">2023 – Presente</p>
+                    <h3>Desarrollador Backend <span>@ ICBC Multipay – Pagos y B2B</span></h3>
+                    <p class="tab-date">2023 – 2026</p>
                     <ul>
                         <li>Desarrollo de funcionalidades para la prevención de fraudes.</li>
                         <li>Contribuí en el proyecto de generación y validación de Token ICBC, desarrollando funcionalidades para integrarlo en el área de pagos.</li>
@@ -143,7 +144,7 @@
                 </div>
 
                 <div class="tab-panel" id="tab-oo2" role="tabpanel">
-                    <h3>Ayudante Adscripto – OO2 <span>@ UNLP</span></h3>
+                    <h3>Ayudante Adscripto – OO2 <span>@ UNLP Informática</span></h3>
                     <p class="tab-date">2023</p>
                     <ul>
                         <li>Profundización de los temas de OO1 e introducción a conceptos fundamentales para construir arquitecturas de software modulares, extensibles y reusables.</li>
@@ -163,7 +164,7 @@
                 </div>
 
                 <div class="tab-panel" id="tab-oo1" role="tabpanel">
-                    <h3>Ayudante Alumno – OO1 <span>@ UNLP</span></h3>
+                    <h3>Ayudante Alumno – OO1 <span>@ UNLP Informática</span></h3>
                     <p class="tab-date">2023 – Presente</p>
                     <ul>
                         <li>Presentación formal del paradigma de orientación a objetos, sus características, ventajas y aplicaciones en el desarrollo de software.</li>
@@ -178,7 +179,7 @@
     <!-- Publications section -->
     <section class="publications-section fade-in-section" id="publications">
         <h2 class="section-title">
-            <span class="section-num">04.</span> Publicaciones
+            <span class="section-num">03.</span> Publicaciones
             <div class="section-line"></div>
         </h2>
         <div class="publication-card">
@@ -189,12 +190,6 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-social">
-            <a href="https://www.linkedin.com/in/jeziel-paladino/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/byjeziel" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            <a href="mailto:jezielpaladino@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
-        </div>
-        <p class="footer-text">Diseñado y construido por Jeziel Paladino</p>
         <p class="footer-copyright">© 2024 All Rights Reserved</p>
     </footer>
 
